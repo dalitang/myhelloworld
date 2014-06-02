@@ -1,6 +1,6 @@
-INDEX VERSION 1.126+/Users/neo/Dropbox/android/workspace/.metadata/.plugins/org.eclipse.jdt.core
-1079000354.index
+INDEX VERSION 1.126+/home/dali/Dropbox/android/workspace/myhelloworld/.metadata/.plugins/org.eclipse.jdt.core
 3199866059.index
-509740888.index
-546912268.index
+1635547634.index
+586933366.index
+1291650616.index
 1270315800.index
