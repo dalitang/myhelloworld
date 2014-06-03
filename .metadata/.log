@@ -1155,3 +1155,23 @@ org.eclipse.core.internal.resources.ResourceException: Resource already exists o
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
 !SUBENTRY 1 org.eclipse.core.resources 4 272 2014-06-03 23:55:38.405
 !MESSAGE Resource already exists on disk: '/eric/bin/classes/.gitignore'.
+
+!ENTRY org.eclipse.core.jobs 4 2 2014-06-04 00:00:32.495
+!MESSAGE An internal error occurred during: "Pulling Branch master - myhelloworld".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jgit.merge.RecursiveMerger.getBaseCommit(RecursiveMerger.java:196)
+	at org.eclipse.jgit.merge.RecursiveMerger.getBaseCommit(RecursiveMerger.java:126)
+	at org.eclipse.jgit.merge.ThreeWayMerger.mergeBase(ThreeWayMerger.java:132)
+	at org.eclipse.jgit.merge.ResolveMerger.mergeImpl(ResolveMerger.java:224)
+	at org.eclipse.jgit.merge.Merger.merge(Merger.java:176)
+	at org.eclipse.jgit.merge.ThreeWayMerger.merge(ThreeWayMerger.java:114)
+	at org.eclipse.jgit.api.MergeCommand.call(MergeCommand.java:337)
+	at org.eclipse.jgit.api.PullCommand.call(PullCommand.java:307)
+	at org.eclipse.egit.core.op.PullOperation$1.run(PullOperation.java:97)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2345)
+	at org.eclipse.egit.core.op.PullOperation.execute(PullOperation.java:128)
+	at org.eclipse.egit.ui.internal.pull.PullOperationUI.execute(PullOperationUI.java:119)
+	at org.eclipse.egit.ui.internal.pull.PullOperationUI$1.runInWorkspace(PullOperationUI.java:94)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
